@@ -1,0 +1,15 @@
+{
+  "name": "aws-bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kimitawanjohi <kimitawanjohi7923@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./node_modules/pm2/bin/pm2 start ./index.js --name hello_aws --log ../logs/app.log ", 
+    "stop": "node ./node_modules/pm2/bin/pm2 stop hello_aws", 
+    "build": "echo 'Building...'"  
+  },
+  "dependencies": { 
+    "pm2": "^4.2.0" 
+  } 
+}
